@@ -1,9 +1,11 @@
 import React from 'react';
+import JoinTwitter from './components/JoinTwitter';
 
 function Task5() {
   return (
     <div>
       <h3>Task 5</h3>
+      <JoinTwitter />
     </div>
   );
 }
