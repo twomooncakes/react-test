@@ -1,11 +1,41 @@
 import React from 'react';
+import Categories from './Categories';
+
+let productCategories = [
+    {
+        id: 1,
+        title: 'Posters',
+        image: 'img/posters.jpg'
+    },
+    {
+        id: 2,
+        title: 'Apparel',
+        image: 'img/apparel.jpg'
+    },
+    {
+        id: 3,
+        title: 'Stickers',
+        image: 'img/stickers.jpg'
+    },
+    {
+        id: 4,
+        title: 'Cups',
+        image: 'img/cups.jpg'
+    },
+    {
+        id: 5,
+        title: 'Calendars',
+        image: 'img/calendars.jpg'
+    },
+]
 
 function Task2() {
-  return (
-    <div>
-      <h3>Task 2</h3>
-    </div>
-  );
+    return (
+        <div>
+            <h3>Task 2</h3>
+            <Categories productCategories={productCategories} />
+        </div>
+    );
 }
 
 export default Task2;
