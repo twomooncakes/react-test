@@ -1,11 +1,13 @@
 import React from 'react';
+import Form from './Form';
 
 function Task3() {
-  return (
-    <div>
-      <h3>Task 3</h3>
-    </div>
-  );
+    return (
+        <div>
+            <h3>Task 3</h3>
+            <Form />
+        </div>
+    );
 }
 
 export default Task3;
