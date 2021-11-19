@@ -1,11 +1,26 @@
 import React from 'react';
+import { Link, Route, Switch } from "react-router-dom";
+import AboutUs from './Pages/AboutUs';
+import Contacts from './Pages/Contacts';
 
 function Task1() {
-  return (
+    return (
     <div>
-      <h3>Task 1</h3>
+        <h3>Task 1</h3>
+        <nav>
+            <Link to="/about">About Us</Link>
+            <Link to="/contacts">Contacts</Link>
+        </nav>
+        <Switch>
+            <Route path='/about'>
+                <AboutUs />
+            </Route>
+            <Route path='/contacts'>
+                <Contacts />
+            </Route>
+        </Switch>
     </div>
-  );
+    );
 }
 
 export default Task1;
