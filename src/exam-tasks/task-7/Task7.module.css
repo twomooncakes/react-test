@@ -1,0 +1,19 @@
+.container {
+    margin: 0 30%;
+    padding: 1rem 0 2rem;
+    text-align: justify;
+}
+
+.task7-btns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+.task7-btns button {
+    background-color: rgb(42, 42, 42);
+    border: none;
+    border-radius: 1.5rem;
+    padding: 0.7rem 0.9rem;
+    color: white;
+}
