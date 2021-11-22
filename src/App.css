@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
 }
 
 main {
@@ -13,35 +14,4 @@ main {
 a {
     text-decoration: none;
     color: inherit;
-}
-
-
-/* task 2 */
-
-#task2 {
-    box-shadow: rgba(0,0,0,0.2) 0 5px 10px;
-    background-color: white;
-    padding: 2.5rem;
-}
-
-#task2 h1, h2 {
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-.categories-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    padding: 1rem;
-}
-
-.category-wrapper {
-    font-weight: 400;
-}
-
-.category-wrapper img {
-    width: 100%;
 }
