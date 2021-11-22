@@ -12,7 +12,6 @@ export default class Task9 extends Component {
     getTodos = async () => {
         const resp = await fetch('https://jsonplaceholder.typicode.com/todos');
         const data = await resp.json();
-        console.log(data.slice(0,5))
         this.setState({ todos: data.slice(0,5) })
     }
 

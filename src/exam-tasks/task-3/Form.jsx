@@ -29,7 +29,10 @@ function Form() {
             <input type="text" placeholder="Pavardė" onChange={(e) => setLastName(e.target.value)}/>
             <input type="number" placeholder="Amžius" onChange={(e) => setAge(e.target.value)}/>
             <button className={css['reg-btn']}>Pateikti</button>
-            {message && <div className={`${css.message} ${isAdult ? css.success : css.error}`}>{isAdult ? "Dėkojame, kad užsiregistravote" : "Deja, registracija negalima. Registruotis galima tik nuo 18 metų"}</div>}
+            <div className={css['message-wrapper']}>
+                {message && <div className={`${css.message} ${isAdult ? css.success : css.error}`}>{isAdult ? "Dėkojame, kad užsiregistravote" : "Deja, registracija negalima. Registruotis galima tik nuo 18 metų"}</div>}
+            </div>
+            
         </form>
     );
 }

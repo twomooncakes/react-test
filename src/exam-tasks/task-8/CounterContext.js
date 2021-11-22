@@ -9,16 +9,19 @@ export const CounterContext = React.createContext({
 
 function CounterProvider({ children }) {
     const [counter, setCounter] = useState(0);
+    const [over100Message, setOver100Message] = useState(false);
 
     const increaseCounter = () => {
         if(counter >= 100) {
             toast.error('Didinti nebegalima');
+            setOver100Message(true);
             return;
         }
         setCounter(counter + 10);
     };
 
     const decreaseCounter = () => {
+        setOver100Message(false);
         setCounter(counter - 10);
     };
 
@@ -26,6 +29,7 @@ function CounterProvider({ children }) {
         counter: counter,
         increaseCounter: increaseCounter,
         decreaseCounter: decreaseCounter,
+        over100Message: over100Message,
     };
     return (
         <CounterContext.Provider value={counterCtx}>

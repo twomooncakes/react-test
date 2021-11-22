@@ -20,7 +20,7 @@ function Task7() {
                 <h1>Lorem ipsum catticus</h1>
                 <p>Birman. Scottish fold cheetah leopard yet persian but siberian, and cornish rex but kitty. Siberian kitty abyssinian or american bobtail birman. Cheetah kitty for bobcat and tomcat. Munchkin tiger and tom but leopard yet jaguar, bengal. Kitty cheetah, tom. Kitten jaguar, russian blue yet singapura jaguar. Siberian kitty abyssinian or american bobtail birman.</p>
                 <div className={css['task7-btns']}>
-                    <button  onClick={lightTheme}>Light theme</button>
+                    <button onClick={lightTheme}>Light theme</button>
                     <button onClick={darkTheme}>Dark theme</button>
                 </div>
             </div>

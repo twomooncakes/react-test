@@ -16,6 +16,10 @@ function Task8() {
         <div className={css.container}>
             <h3 style={{position: 'absolute', left: '0'}}>Task 8</h3>
             <h4 className={css.counter}>counter: {counter}</h4>
+            <div className={css['message-wrapper']}>
+                {counterCtx.over100Message && <p className={`${css.child} ${css.error}`}>Didinti nebegalima</p>}
+            </div>
+            
             <CompA />
             <CompB />
         </div>

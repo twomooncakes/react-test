@@ -5,7 +5,7 @@ function AboutUs() {
     return (
         <main>
             <h1>About Us</h1>
-            <button onClick={() => history.goBack()}>Back</button>
+            <button onClick={() => history.goBack()}>Grįžti atgal</button>
         </main>
     );
 }

@@ -1,6 +1,5 @@
 .reg-form {
     margin: 1rem 20% 1rem;
-    padding-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,10 +25,14 @@
     padding: 0.5rem 1rem;
 }
 
+.message-wrapper {
+    position: relative;
+    height: 40px;
+}
+
 .message {
+    width: max-content;
     font-size: 0.9rem;
-    position: absolute;
-    bottom: -2.4rem;
 }
 
 .success {
@@ -38,4 +41,5 @@
 
 .error {
     color: rgb(214, 53, 24);
+    /* left: -12rem; */
 }
