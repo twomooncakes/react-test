@@ -1,13 +1,13 @@
 import React from 'react';
-import JoinTwitter from './components/JoinTwitter';
+import JoinCard from './components/JoinCard';
 
 function Task5() {
-  return (
-    <div>
-      <h3>Task 5</h3>
-      <JoinTwitter />
-    </div>
-  );
+    return (
+        <div>
+            <h3>Task 5</h3>
+            <JoinCard fontFam="Helvetica, sans-serif" iconClass="twitter"/>
+        </div>
+    );
 }
 
 export default Task5;

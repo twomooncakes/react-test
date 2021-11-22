@@ -1,0 +1,22 @@
+.btn {
+    border-radius: 1.5rem;
+    padding: 0.7rem 0.7rem;
+    font-weight: 600;
+    width: 50%;
+}
+
+.btn:nth-child(odd) {
+    margin-bottom: 1rem;
+}
+
+.btn-filled {
+    border: none;
+    background-color: #1DA1F2;
+    color: whitesmoke;
+}
+
+.btn-outlined {
+    border: 1px solid #1DA1F2;
+    background-color: transparent;
+    color: #1DA1F2;
+}
