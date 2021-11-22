@@ -1,0 +1,21 @@
+.likes-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.likes-container i {
+    color: gray;
+    margin-right: 0.5rem;
+}
+
+.like-btn {
+    cursor: pointer;
+    font-weight: 700;
+    background-color: #eaeaea;
+    color: gray;
+    border: none;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}

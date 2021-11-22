@@ -1,4 +1,5 @@
 import { useReducer, useState } from 'react';
+import css from './LikeDislike.module.css'
 
 const initialState = {
     likes: 12,
@@ -49,12 +50,12 @@ function LikeDislike() {
     };
 
     return (
-        <div>
-            <button onClick={handleLike}>
-                <span>{state.likes}</span>
+        <div className={css['likes-container']}>
+            <button className={css['like-btn']} onClick={handleLike}>
+                <i className="material-icons">thumb_up</i>{state.likes}
             </button>
-            <button onClick={handleDislike}>
-                <span>{state.dislikes}</span>
+            <button className={css['like-btn']} onClick={handleDislike}>
+                <i className="material-icons">thumb_down</i>{state.dislikes}
             </button>
         </div>
     );
