@@ -19,3 +19,12 @@ a {
 button {
     cursor: pointer;
 }
+
+/* Remove ugly number input buttons */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}

@@ -30,7 +30,7 @@ function Task6() {
                 <tbody>
                     {users.length > 0 && users.map((user) => {
                         return (
-                            <tr>
+                            <tr key={user.id}>
                                 <td>{user.name}</td>
                                 <td>{user.email}</td>
                                 <td>{`${user.address.street}, ${user.address.city}`}</td>
