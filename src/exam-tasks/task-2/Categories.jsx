@@ -7,7 +7,7 @@ function Categories({productCategories}) {
             <div className={css['categories-container']}>
                 {productCategories.map((category) => {
                     return (
-                        <div className={css['category-wrapper']}>
+                        <div key={category.id} className={css['category-wrapper']}>
                             <img src={category.image} />
                             <h2>{category.title}</h2>
                         </div>

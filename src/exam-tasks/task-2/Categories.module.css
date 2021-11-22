@@ -1,7 +1,17 @@
 .container {
     box-shadow: rgba(0,0,0,0.2) 0 5px 10px;
+    border-radius: .25rem;
     background-color: white;
     padding: 2.5rem;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+}
+
+.container h2 {
+    margin-top: 1rem;
+    font-size: 1.6rem;
 }
 
 .container h1, .container h2 {

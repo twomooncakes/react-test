@@ -1,0 +1,22 @@
+.reg-form {
+    margin: 0 20% 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reg-form input {
+    border-radius: .7rem;
+    border: 1px solid #c3c3c4;
+    padding: 0.5rem 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+.reg-btn {
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 3rem;
+    margin: 0.4rem 0 1rem;
+    padding: 0.5rem 1rem;
+}

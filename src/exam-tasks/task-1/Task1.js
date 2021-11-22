@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Route, Switch } from "react-router-dom";
+import css from './Task1.module.css';
 import AboutUs from './Pages/AboutUs';
 import Contacts from './Pages/Contacts';
 
@@ -11,14 +12,16 @@ function Task1() {
             <Link to="/about">About Us</Link>
             <Link to="/contacts">Contacts</Link>
         </nav>
-        <Switch>
-            <Route path='/about'>
-                <AboutUs />
-            </Route>
-            <Route path='/contacts'>
-                <Contacts />
-            </Route>
-        </Switch>
+        <div className={css.container}>
+            <Switch>
+                <Route path='/about'>
+                    <AboutUs />
+                </Route>
+                <Route path='/contacts'>
+                    <Contacts />
+                </Route>
+            </Switch>
+        </div>
     </div>
     );
 }
