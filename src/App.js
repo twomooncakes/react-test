@@ -11,41 +11,46 @@ import Task7 from './exam-tasks/task-7/Task7';
 import Task8 from './exam-tasks/task-8/Task8';
 import Task9 from './exam-tasks/task-9/Task9';
 import Task10 from './exam-tasks/task-10/Task10';
+import CounterProvider from './exam-tasks/task-8/CounterContext';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
-  return (
-    <div className='App'>
-      <Task1 />
-      <hr />
+    return (
+        <div className='App'>
+            <Task1 />
+            <hr />
 
-      <Task2 />
-      <hr />
+            <Task2 />
+            <hr />
 
-      <Task3 />
-      <hr />
+            <Task3 />
+            <hr />
 
-      <Task4 />
-      <hr />
+            <Task4 />
+            <hr />
 
-      <Task5 />
-      <hr />
+            <Task5 />
+            <hr />
 
-      <Task6 />
-      <hr />
+            <Task6 />
+            <hr />
 
-      <Task7 />
-      <hr />
+            <Task7 />
+            <hr />
+            
+            <CounterProvider>
+                <Toaster />
+                <Task8 />
+            </CounterProvider>
+            <hr />
 
-      <Task8 />
-      <hr />
+            <Task9 />
+            <hr />
 
-      <Task9 />
-      <hr />
-
-      {/* <Task10 /> */}
-      {/* <hr /> */}
-    </div>
-  );
+            {/* <Task10 /> */}
+            {/* <hr /> */}
+        </div>
+    );
 }
 
 export default App;

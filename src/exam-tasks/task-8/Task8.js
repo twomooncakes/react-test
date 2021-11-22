@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import CompA from './CompA';
 import CompB from './CompB';
+import css from './Task8.module.css';
+import { useCounterCtx } from './CounterContext';
 
 function Task8() {
-  return (
-    <div>
-      <h3>Task 8</h3>
-      {/*<CompA />*/}
-      {/*<CompB />*/}
-    </div>
-  );
+    const counterCtx = useCounterCtx();
+    const [counter, setCounter] = useState(counterCtx.counter);
+
+    useEffect(() => {
+        setCounter(counterCtx.counter);
+    }, [counterCtx.counter])
+
+    return (
+        <div className={css.container}>
+            <h3 style={{position: 'absolute', left: '0'}}>Task 8</h3>
+            <h4 className={css.counter}>counter: {counter}</h4>
+            <CompA />
+            <CompB />
+        </div>
+    );
 }
 
 export default Task8;
