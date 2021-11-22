@@ -1,0 +1,38 @@
+table {
+    border-collapse: collapse;
+    margin: 1.5rem 20% 3rem;
+    color: white;
+}
+
+th {
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+td {
+    border: 1px solid #ffba08;
+    padding: 0.7rem 1rem;
+}
+
+tr td {
+    cursor: pointer;
+    transition: ease-in 0.4s;
+}
+
+tr:hover td {
+    background-color: #ffba08;
+    color: #03071e;
+}
+
+tr:nth-child(odd) {
+    background-color: #2688d8;
+}
+
+tr:nth-child(even) {
+    background-color: #156cb4;
+}
+
+thead tr:first-child {
+    background-color: #ffba08;
+    color: #03071e;
+}
