@@ -1,0 +1,23 @@
+.todo-card {
+    margin: 0 20%;
+    background-color: #111;
+    color: white;
+    border: 3px solid #ffba08;
+    border-bottom: none;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-card:last-child {
+    border-bottom: 3px solid #ffba08;
+    margin-bottom: 1.5rem;
+}
+
+.completed {
+    color: green;
+}
+
+.unfinished {
+    color: tomato;
+}
